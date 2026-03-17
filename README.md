@@ -22,7 +22,7 @@ agent-ledger/
 │   ├── agents/
 │   │   ├── graph.py             # LangGraph state & workflow definition
 │   │   ├── matcher_agent.py     # Core matching logic (LLM + heuristics)
-│   │   └── human_in_loop.py     # *'Human in the Loop approval'* node
+│   │   └── human_in_loop.py     # 'Human in the Loop approval' node
 │   ├── tools/
 │   │   └── erp_api.py           # ERP lookup tools exposed to agents
 │   ├── models/
@@ -34,7 +34,7 @@ agent-ledger/
 
 ## User Interface
 
-AgentLedger includes a real time Streamlit dashboard that visualizes the AI's matching logic, step-by-step reasoning for partial matches, and *human-in-the-loop* workflows.
+AgentLedger includes a real time Streamlit dashboard that visualizes the AI's matching logic, step by step reasoning for partial matches, and *human-in-the-loop* workflows.
 
 ![AgentLedger Dashboard](docs/assets/dashboard.png)
 
@@ -62,9 +62,9 @@ streamlit run app.py
 ## Tech Stack
 
 - **Python 3.12+**
-- **LangGraph** – stateful agent orchestration & Human-in-the-Loop workflows
+- **LangGraph** – stateful agent orchestration and Human in the Loop workflows
 - **Pydantic v2** – strict runtime data validation
-- **Pandas** – data ingestion & manipulation
+- **Pandas** – data ingestion and manipulation
 
 ## 📜 License
 
