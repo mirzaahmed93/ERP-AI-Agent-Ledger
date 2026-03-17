@@ -14,8 +14,8 @@ Despite continuous digital transformation efforts, financial reconciliation rema
 *   **Ineffective ERP Modernization**: Organisations often fail to realize the benefits of new ERP implementations. **McKinsey & Company** reports a 70% failure rate for ERP modernization projects when businesses simply transfer outdated, broken manual processes to new systems rather than redesigning them (McKinsey & Company, 2025).
 *   **The AI Imperative**: To combat these bottlenecks, financial institutions are turning to Generative AI. **McKinsey** projects that GenAI could add between $200 billion USD and $340 billion USD in annual value to the global banking sector by 2025, largely achieved by automating complex middle office tasks like reconciliation and exception handling (McKinsey & Company, 2025).
 
-## iii) The AgentLedger Solution (Proposed Fix)
-AgentLedger tackles these challenges by introducing an intelligent, middle-tier matching engine. Instead of replacing the ERP, AgentLedger acts as a highly capable assistant that pre-processes incoming bank feeds before they are committed to the ledger.
+## iii) The Agent Ledger Solution (Proposed Fix)
+Agent Ledger tackles these challenges by introducing an intelligent, middle-tier matching engine. Instead of replacing the ERP, AgentLedger acts as a highly capable assistant that pre-processes incoming bank feeds before they are committed to the ledger.
 
 ### Core Architecture and Library Requirements
 The system is built on a modern, open-source Python data stack, ensuring it remains *100% free-tier capable leveraging localised models* where possible:
@@ -28,13 +28,13 @@ The system is built on a modern, open-source Python data stack, ensuring it rema
 *   **Pandas (`pandas`)**: Handles the initial ingestion and manipulation of the CSV data extracts.
 
 ## iv) System Walkthrough & Workflow
-The AgentLedger pipeline operates as a multi-stage funnel, optimising for both speed and accuracy.
+The Agent Ledger pipeline operates as a multi-stage funnel, optimising for both speed and accuracy.
 
 ### Stage 1: Ingestion & Vectorization
 1. **Data Load**: The system ingests the internal `erp_accounts_receivable.csv` (Open Invoices) and the external `bank_statement.csv` (Incoming Cash).
 2. **Knowledge Retrieval Setup**: To avoid overwhelming the LLM with thousands of invoices (and bankrupting the API quota), AgentLedger converts all open invoices into vector embeddings using a local HuggingFace model and stores them in FAISS.
 
-### Stage 2: The Fast-Path (Deterministic Matching)
+### Stage 2: The Fast Path (Deterministic Matching)
 When a bank transaction arrives, AgentLedger first attempts a purely heuristic matching. 
 *   *Example*: If the bank description contains exactly "INV-2679" and the payment matches the balance of $1100.04 perfectly, it is instantly marked as an **Exact Match**. This bypasses AI entirely, *saving both time and money*.
 
@@ -48,7 +48,7 @@ When a bank transaction arrives, AgentLedger first attempts a purely heuristic m
 For unresolvable transactions (0% confidence), the system halts and escalates. The Streamlit dashboard visualizes this entire flow. Stakeholders can watch transactions turn Green (Exact), Yellow (Partial - AI Reasoned), or Red (Failed - Human Review Required). *By clicking on a Yellow transaction, the user can read the exact mathematical justification the LLM used to make the match, ensuring full auditability*.
 
 ## v) Conclusion
-AgentLedger demonstrates how augmenting traditional ERP systems with targeted AI agents can drastically reduce manual reconciliation workloads. By blending lightning fast vector search with LLM reasoning, finance teams can resolve complex short-pays and messy data in real-time, achieving higher accuracy and freeing analysts to focus on truly strategic anomalies.
+Agent Ledger demonstrates how augmenting traditional ERP systems with targeted AI agents can drastically reduce manual reconciliation workloads. By blending lightning fast vector search with LLM reasoning, finance teams can resolve complex short-pays and messy data in real-time, achieving higher accuracy and freeing analysts to focus on truly strategic anomalies.
 
 ---
 
