@@ -1,6 +1,6 @@
-# AgentLedger
+# Agent Ledger
 
-> **AI-powered B2B payment reconciliation using a multi-agent LangGraph pipeline.**
+> **AI powered B2B payment reconciliation using a multi-agent LangGraph pipeline.**
 
 AgentLedger matches messy, real world bank statements against strict ERP Accounts Receivable data. It handles the edge cases that make reconciliation painful for compliance and other stakeholders:
 
