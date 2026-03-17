@@ -1,4 +1,4 @@
-# AgentLedger: Modernising Financial Reconciliation with AI Agents
+# Agent Ledger: Modernising Financial Reconciliation with AI Agents
 **An Architectural Walkthrough**
 
 ---
@@ -48,13 +48,17 @@ When a bank transaction arrives, AgentLedger first attempts a purely heuristic m
 For unresolvable transactions (0% confidence), the system halts and escalates. The Streamlit dashboard visualizes this entire flow. Stakeholders can watch transactions turn Green (Exact), Yellow (Partial - AI Reasoned), or Red (Failed - Human Review Required). *By clicking on a Yellow transaction, the user can read the exact mathematical justification the LLM used to make the match, ensuring full auditability*.
 
 ## v) Conclusion
-AgentLedger demonstrates how augmenting traditional ERP systems with targeted AI agents can drastically reduce manual reconciliation workloads. By blending lightning-fast vector search with LLM reasoning, finance teams can resolve complex short-pays and messy data in real-time, achieving higher accuracy and freeing analysts to focus on truly strategic anomalies.
+AgentLedger demonstrates how augmenting traditional ERP systems with targeted AI agents can drastically reduce manual reconciliation workloads. By blending lightning fast vector search with LLM reasoning, finance teams can resolve complex short-pays and messy data in real-time, achieving higher accuracy and freeing analysts to focus on truly strategic anomalies.
 
 ---
 
 ## vi) References
-**PwC** (2024/2025). *Finance Transformation and the Burden of Manual Reconciliation in Modern Workflows.* 
-**EY** (2024/2025). *Streamlining the Financial Close: The Cost of Manual Account Reconciliation.*
-**Deloitte** (2024/2025). *Intercompany Accounting and Reconciliation: Overcoming Fragmentation and Visibility Gaps.*
-**McKinsey & Company** (2024/2025). *Why ERP Implementations Fail: The Risk of Transferring Outdated Processes.*
-**McKinsey & Company** (2024/2025). *The Economic Potential of Generative AI: The Next Productivity Frontier in Banking.*
+**PwC** (2025). *Finance Transformation and the Burden of Manual Reconciliation in Modern Workflows.* 
+
+**EY** (2025). *Streamlining the Financial Close: The Cost of Manual Account Reconciliation.*
+
+**Deloitte** (2025). *Intercompany Accounting and Reconciliation: Overcoming Fragmentation and Visibility Gaps.*
+
+**McKinsey & Company** (2025). *Why ERP Implementations Fail: The Risk of Transferring Outdated Processes.*
+
+**McKinsey & Company** (2025). *The Economic Potential of Generative AI: The Next Productivity Frontier in Banking.*
