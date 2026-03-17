@@ -2,7 +2,7 @@
 
 > **AI-powered B2B payment reconciliation using a multi-agent LangGraph pipeline.**
 
-AgentLedger matches messy, real-world bank statements against strict ERP Accounts Receivable data. It handles the edge cases that make reconciliation painful for compliance and other stakeholders:
+AgentLedger matches messy, real world bank statements against strict ERP Accounts Receivable data. It handles the edge cases that make reconciliation painful for compliance and other stakeholders:
 
 | Edge Case | How AgentLedger Handles It |
 |---|---|
@@ -34,7 +34,7 @@ agent-ledger/
 
 ## User Interface
 
-AgentLedger includes a real-time Streamlit dashboard that visualizes the AI's matching logic, step-by-step reasoning for partial matches, and human-in-the-loop workflows.
+AgentLedger includes a real time Streamlit dashboard that visualizes the AI's matching logic, step-by-step reasoning for partial matches, and *human-in-the-loop* workflows.
 
 ![AgentLedger Dashboard](docs/assets/dashboard.png)
 
