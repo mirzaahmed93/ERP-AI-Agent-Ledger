@@ -22,7 +22,7 @@ agent-ledger/
 │   ├── agents/
 │   │   ├── graph.py             # LangGraph state & workflow definition
 │   │   ├── matcher_agent.py     # Core matching logic (LLM + heuristics)
-│   │   └── human_in_loop.py     # Human-in-the-Loop approval node
+│   │   └── human_in_loop.py     # *'Human in the Loop approval'* node
 │   ├── tools/
 │   │   └── erp_api.py           # ERP lookup tools exposed to agents
 │   ├── models/
