@@ -4,7 +4,7 @@
 
 AgentLedger matches messy, real world bank statements against strict ERP Accounts Receivable data. It handles the edge cases that make reconciliation painful for compliance and other stakeholders:
 
-| Edge Case | How AgentLedger Handles It |
+| Edge Case | How Agent Ledger Handles It |
 |---|---|
 | **Bulk Payments** | One deposit paying multiple invoices → multi-invoice hypothesis scoring |
 | **Short Pays** | Wire fee deductions → amount discrepancy detection with configurable tolerance |
@@ -34,9 +34,9 @@ agent-ledger/
 
 ## User Interface
 
-AgentLedger includes a real time Streamlit dashboard that visualizes the AI's matching logic, step by step reasoning for partial matches, and *human-in-the-loop* workflows.
+Agent Ledger includes a real time Streamlit dashboard that visualizes the AI's matching logic, step by step reasoning for partial matches, and *human-in-the-loop* workflows.
 
-![AgentLedger Dashboard](docs/assets/dashboard.png)
+![Agent Ledger Dashboard](docs/assets/dashboard.png)
 
 ---
 
