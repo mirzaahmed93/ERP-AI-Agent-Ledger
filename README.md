@@ -7,7 +7,7 @@ AgentLedger matches messy, real world bank statements against strict ERP Account
 | Edge Case | How AgentLedger Handles It |
 |---|---|
 | **Bulk Payments** | One deposit paying multiple invoices → multi-invoice hypothesis scoring |
-| **Short Pays** | Wire-fee deductions → amount-discrepancy detection with configurable tolerance |
+| **Short Pays** | Wire fee deductions → amount discrepancy detection with configurable tolerance |
 | **Typos & Fuzzy Refs** | Misspelled references → LLM-powered fuzzy matching with confidence scores |
 
 ---
@@ -17,16 +17,16 @@ AgentLedger matches messy, real world bank statements against strict ERP Account
 ```
 agent-ledger/
 ├── data/
-│   └── generate_mock_data.py    # Synthetic bank & ERP data generator
+│   └── generate_mock_data.py    # Synthetic bank and ERP data generator
 ├── src/
 │   ├── agents/
-│   │   ├── graph.py             # LangGraph state & workflow definition
-│   │   ├── matcher_agent.py     # Core matching logic (LLM + heuristics)
+│   │   ├── graph.py             # LangGraph state and workflow definition
+│   │   ├── matcher_agent.py     # Core matching logic (LLM with heuristics)
 │   │   └── human_in_loop.py     # 'Human in the Loop approval' node
 │   ├── tools/
 │   │   └── erp_api.py           # ERP lookup tools exposed to agents
 │   ├── models/
-│   │   └── schemas.py           # Pydantic data models
+│   │   └── schemas.py           # Data models
 │   └── config.py                # Project configuration
 ├── requirements.txt
 └── README.md
