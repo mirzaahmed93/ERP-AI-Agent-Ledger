@@ -141,6 +141,9 @@ def human_review_node(state: ReconciliationState) -> Dict:
 
     print(f"  {RED}⚠ Escalated to human reviewer.{RESET}\n")
     
+    # Preserve the AI's reasoning if it exists
+    base_reasoning = result.reasoning if result else "No candidate matches found."
+    
     result = ReconciliationResult(
         transaction_id=txn.transaction_id,
         matched_invoice_ids=[],
@@ -148,7 +151,7 @@ def human_review_node(state: ReconciliationState) -> Dict:
         confidence_score=0.0,
         amount_matched=0.0,
         amount_discrepancy=txn.amount,
-        reasoning="Match escalated for human review.",
+        reasoning=f"{base_reasoning} (Match escalated for human review.)",
     )
 
     return {"final_result": result}

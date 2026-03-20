@@ -105,8 +105,8 @@ def status_icon(status: MatchStatus) -> str:
 def print_banner() -> None:
     print(f"\n{BOLD}{CYAN}")
     print("  ╔══════════════════════════════════════════════════════╗")
-    print("  ║            🏦  A G E N T   L E D G E R             ║")
-    print("  ║        AI-Powered Payment Reconciliation            ║")
+    print("  ║            A G E N T   L E D G E R                   ║")
+    print("  ║        AI-Powered Payment Reconciliation             ║")
     print("  ╚══════════════════════════════════════════════════════╝")
     print(f"{RESET}\n")
 

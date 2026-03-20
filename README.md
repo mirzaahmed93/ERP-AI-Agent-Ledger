@@ -66,6 +66,6 @@ streamlit run app.py
 - **Pydantic v2** – strict runtime data validation
 - **Pandas** – data ingestion and manipulation
 
-## 📜 License
+## License
 
 MIT
