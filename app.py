@@ -151,7 +151,7 @@ with tab1:
                 
                 st.markdown("---")
                 st.markdown("**Agent Reasoning:**")
-                st.info(result.reasoning)
+                st.info(result.reasoning.replace("$", r"\$"))
                 st.caption(f"Processed in {duration:.2f}s")
                 
             progress_bar.progress(i / num_to_process)
